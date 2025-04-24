@@ -8,7 +8,7 @@ O formulário foi desenvolvido com foco em simplicidade e funcionalidade. Veja a
 
 ### Título
 
-- Um título principal `<h1>` com a palavra **"CADASTRO"**, estilizado com a tag `<i>` para exibir em itálico.
+- O título principal `<h1>` com a palavra **"CADASTRO"**, estilizado com a tag `<i>` para exibir em itálico.
 
 ### Campo de Nome
 
