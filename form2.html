@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+</head>
+
+<body>
+    <!-- action - recebe o enderço do arquivo/página para onde os dados serão enviados.
+         method - determina como os dados serão enviados.
+         name - serve para o navegador compreender do que se trata o seu campo e falar para um deficiente visual. Ajuda também na semãntica e no filtro. 
+         Quando mandamos o forms por e-mail, por conta do atributo name, é que seus dados aparecem, caso você não coloque, o formulário vai chegar eem branco. Caso fosse
+         para um banco de dados que estivéssemos enviando o formulário, no atributo name, colocaríamos o nome da coluna da tabela.
+         maxlengrh - é o comprimento máximo que define o tanto de caracteres que o seu campo pode ter para se adequar a modelagem do BD.
+         required - serve para não deixarmos o campo nulo.  
+         autocomplete - Quando o usuário preenche o campo e envia o formulário, os dados ficam salvos. Assim, caso ele queira enviar o formulário novamente, mão é necessário redigitar todos os dados.
+         autocomplete="off" - Não salva nada.
+         Api que envia seu formulário para seu e-mail: https://formsubmit.co/caue.valente@aluno.senai.br
+
+        -->
+    <div style="display: flex; justify-content: center; align-items: center;">
+        <form action="https://formsubmit.co/cauevalente00@gmail.com" method="post" >
+                    <!-- 1 Formulário -->
+
+                    <h1><i>CADASTRO</i></h1>
+
+                    <!-- Nome -->
+                    <div>
+                        <label for="name">Nome</label>
+                    </div>
+                    <input type="text" id="name" name="name" placeholder="Nome e sobrenome" maxlength="30" required autofocus autocomplete="on" style="border-radius: 15px; padding: 7px;">
+                    <br><br>
+
+                    <!-- E-mail -->
+                    <div>
+                    <label for="email">E-mail</label>
+                    </div>
+                    <input type="email" id="email" name="email" maxlength="50" required placeholder="email@email.com"  autocomplete  style="border-radius: 15px; padding: 7px;">
+                    <br><br>
+
+                    <!-- Telefone -->
+                    <div>
+                    <label for="tel">Telefone</label>
+                    </div>
+                    <input type="tel" id="tel" name="tel" maxlength="11" required autocomplete="on" placeholder="(XX) XXXX-XXXX" style="border-radius: 15px; padding: 7px;">
+                    <br><br>
+                
+                    <!-- Currículo -->
+                    <div>
+                    <label for="curriculum">Currículo</label>
+                    <div>
+                    <input type="file" name="curriculum" id="curriculum" style="border-radius: 15px; padding: 7px;">
+                    <br><br>
+
+                    <!-- Mensagem -->
+                <div>
+                    <label for="message">Mensagem</label>
+                </div> 
+                    <textarea name="message" id="message" cols="30" rows="10" maxlength="200" placeholder="Digite aqui sua mensagem" required  style="border-radius: 15px; padding: 7px;"></textarea>
+                
+                <!--  Submit -->
+                    <div>
+                            <label for="submit"></label>
+                            <button type="submit" style="border-radius: 5px;" name="_next" value="http://127.0.0.1:5500/telaadcional.html">Enviar</button> 
+                    </div>
+
+                </form>
+    </div>
+</body>
+
+</html>
