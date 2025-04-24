@@ -1,55 +1,66 @@
-📋 Formulário de Cadastro HTML
-Este projeto é um formulário de cadastro simples feito em HTML, utilizando estilização básica inline e centralizado com Flexbox. Os dados são enviados via FormSubmit, diretamente para um e-mail configurado.
+# 📋 Formulário de Cadastro HTML
 
-🛠️ Criação do Formulário
+Este projeto é um formulário de cadastro simples feito em HTML, utilizando estilização básica inline e centralizado com Flexbox. Os dados são enviados via **FormSubmit**, diretamente para um e-mail configurado.
+
+---
+
+## 🛠️ Criação do Formulário
+
 O formulário foi desenvolvido com foco em simplicidade e funcionalidade. Veja abaixo os elementos implementados:
 
-🧾 Título
-Um título principal <h1> com a palavra "CADASTRO", estilizado com a tag <i> para exibir em itálico.
+### 🧾 Título
 
-👤 Campo de Nome
-Campo do tipo text, com id="name" e name="name".
+- Um título principal `<h1>` com a palavra **"CADASTRO"**, estilizado com a tag `<i>` para exibir em itálico.
 
-Máximo de 30 caracteres, com preenchimento automático e estilo arredondado.
+### 👤 Campo de Nome
 
-📧 Campo de E-mail
-Campo do tipo email, com validação HTML5 e limite de 50 caracteres.
+- Campo do tipo `text`, com `id="name"` e `name="name"`.
+- Máximo de 30 caracteres, com preenchimento automático e estilo arredondado.
 
-Sugestão de preenchimento automático habilitada.
+### 📧 Campo de E-mail
 
-📱 Campo de Telefone
-Campo do tipo tel, com limite de 11 caracteres.
+- Campo do tipo `email`, com validação HTML5 e limite de 50 caracteres.
+- Sugestão de preenchimento automático habilitada.
 
-Placeholder no formato brasileiro, com estilo visual arredondado.
+### 📱 Campo de Telefone
 
-📎 Upload de Currículo
-Campo file para upload de um currículo.
+- Campo do tipo `tel`, com limite de 11 caracteres.
+- Placeholder no formato brasileiro, com estilo visual arredondado.
 
-⚠️ Atenção: O FormSubmit não suporta envio direto de arquivos, portanto este campo pode não funcionar sem um back-end adicional.
+### 📎 Upload de Currículo
 
-📝 Campo de Mensagem
-Campo textarea com limite de 200 caracteres.
+- Campo `file` para upload de um currículo.
 
-Estilizado com border-radius e padding para consistência visual.
+> ⚠️ **Atenção**: O FormSubmit não suporta envio direto de arquivos, portanto este campo pode não funcionar sem um back-end adicional.
 
-📤 Botão de Envio
-Botão do tipo submit, que envia os dados do formulário para o e-mail especificado.
+### 📝 Campo de Mensagem
 
-Inclui o parâmetro _next para redirecionamento automático para a página telaadcional.html após o envio bem-sucedido.
+- Campo `textarea` com limite de 200 caracteres.
+- Estilizado com `border-radius` e `padding` para consistência visual.
 
-🔧 Como o Formulário Funciona
-No atributo action do <form>, foi usada a API do FormSubmit junto com o e-mail de destino: cauevalente00@gmail.com.
+### 📤 Botão de Envio
 
-Ao clicar no botão Enviar, os dados são enviados automaticamente para o e-mail configurado.
+- Botão do tipo `submit`, que envia os dados do formulário para o e-mail especificado.
+- Inclui o parâmetro `_next` para redirecionamento automático para a página `telaadcional.html` após o envio bem-sucedido.
 
-Após o envio, o usuário é redirecionado para a página telaadcional.html.
+---
 
-🚀 Publicação no GitHub
+## 🔧 Como o Formulário Funciona
+
+- No atributo `action` do `<form>`, foi usada a API do [FormSubmit](https://formsubmit.co) junto com o e-mail de destino: `cauevalente00@gmail.com`.
+- Ao clicar no botão **Enviar**, os dados são enviados automaticamente para o e-mail configurado.
+- Após o envio, o usuário é redirecionado para a página `telaadcional.html`.
+
+---
+
+## 🚀 Publicação no GitHub
+
 Abaixo estão os passos utilizados para versionar e publicar este projeto no GitHub:
 
-Criei o repositório remoto na interface do GitHub, sem arquivo README.md.
+1. Criei o repositório remoto na interface do GitHub, **sem arquivo README.md**.
+2. No terminal, executei os seguintes comandos:
 
-No terminal, executei os seguintes comandos:
+```bash
 git init
 git config --global user.name "CaueValente"
 git config --global user.email "cauevalente00@gmail.com"
